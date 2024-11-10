@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "padenormous.giddyup209.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

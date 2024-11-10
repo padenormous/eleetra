@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "giddy-up-209",
+	"version": "${version}",
+	"name": "Giddy-Up-209",
+	"description": "Why use 1 rocket, when you can use 64",
+	"authors": [
+		"Paden0rmous"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/giddy-up-209/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"padenormous.giddyup209.GiddyUp209"
+		],
+		"client": [
+			"padenormous.giddyup209.GiddyUp209Client"
+		],
+		"fabric-datagen": [
+			"padenormous.giddyup209.GiddyUp209DataGenerator"
+		]
+	},
+	"mixins": [
+		"giddy-up-209.mixins.json",
+		{
+			"config": "giddy-up-209.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
