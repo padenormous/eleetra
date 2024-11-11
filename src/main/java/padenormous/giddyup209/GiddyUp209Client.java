@@ -1,10 +1,11 @@
 package padenormous.giddyup209;
 
 import net.fabricmc.api.ClientModInitializer;
+import padenormous.giddyup209.client.FlightHUD;
 
 public class GiddyUp209Client implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// Client-side initialization if needed
+		FlightHUD.register();
 	}
 }

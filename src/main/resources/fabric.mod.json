@@ -1,17 +1,18 @@
 {
 	"schemaVersion": 1,
 	"id": "giddy-up-209",
-	"version": "${version}",
-	"name": "Giddy-Up-209",
-	"description": "Why use 1 rocket, when you can use 64",
+	"version": "1.0.0",
+	"name": "Elyeetra",
+	"description": "Min/Max Your Rocket Stack! Enhances Elytra rocket boosting by allowing multiple rockets to be used at once. Features a detailed HUD showing speed, acceleration, G-forces, and flight metrics. Shift + right-click with rockets while flying to use entire stack at once!",
 	"authors": [
 		"Paden0rmous"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/elyeetra",
+		"issues": "https://github.com/Paden0rmous/elyeetra/issues",
+		"sources": "https://github.com/Paden0rmous/elyeetra"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/giddy-up-209/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,25 +21,15 @@
 		],
 		"client": [
 			"padenormous.giddyup209.GiddyUp209Client"
-		],
-		"fabric-datagen": [
-			"padenormous.giddyup209.GiddyUp209DataGenerator"
 		]
 	},
 	"mixins": [
-		"giddy-up-209.mixins.json",
-		{
-			"config": "giddy-up-209.client.mixins.json",
-			"environment": "client"
-		}
+		"giddy-up-209.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
+		"fabricloader": ">=0.15.0",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

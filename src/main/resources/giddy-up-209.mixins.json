@@ -4,7 +4,8 @@
 	"package": "padenormous.giddyup209.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ElytraBoostMixin"
+		"ElytraBoostMixin",
+		"PlayerTickMixin"
 	],
 	"client": [],
 	"injectors": {
