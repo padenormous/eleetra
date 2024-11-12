@@ -15,7 +15,7 @@ import java.util.List;
 public class RocketBoostTracker {
     public static int remainingBoosts = 0;
     public static PlayerEntity activePlayer = null;
-    private static final int BOATS_PER_BOOST = 10;
+    private static final int BOATS_PER_BOOST = 60;
     private static final List<BoatEntity> activeBoats = new ArrayList<>();
 
     public static void startBoost(PlayerEntity player, int fireworkCount) {
